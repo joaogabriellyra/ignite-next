@@ -33,7 +33,7 @@ export default function Post() {
         <p>
           <Link href='#'>#novoprojeto</Link>{' '}
           <Link href='#'>#nlw</Link>{' '}
-          <Link href='#'>#rocketseat </Link>
+          <Link href='#'>#rocketseat</Link>
         </p>
       </div>
 
