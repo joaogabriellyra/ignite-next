@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image';
 import styles from './post.module.css';
 import Link from 'next/link';
@@ -31,9 +33,20 @@ export default function Post() {
         <p>
           <Link href='#'>#novoprojeto</Link>{' '}
           <Link href='#'>#nlw</Link>{' '}
-          <Link href='#'>#rocketseat </Link>
+          <Link href='#'>#rocketseat</Link>
         </p>
       </div>
+
+      <form onSubmit={() => console.log('oi')} className={styles.commentForm}>
+        <strong>Deixe seu feedback</strong>
+        <textarea 
+          placeholder='Deixe um comentário'
+          required
+        />
+        <footer>
+          <button type='submit'>Publicar</button>
+        </footer>
+      </form>
     </article>
   )
 }
