@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import styles from './post.module.css';
 import Link from 'next/link';
+import Comment from './comment';
 
 export default function Post() {
   return(
@@ -47,6 +48,13 @@ export default function Post() {
           <button type='submit'>Publicar</button>
         </footer>
       </form>
+
+      <div className={styles.commentList}>
+        <Comment />
+        <Comment />
+        <Comment />
+      </div>
+
     </article>
   )
 }
