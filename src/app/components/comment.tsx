@@ -1,14 +1,13 @@
 import Image from 'next/image'
 import styles from './comment.module.css'
+import Avatar from './avatar'
 
 export default function Comment() {
   return (
     <div className={styles.comment}>
-      <Image 
+      <Avatar 
         src='https://github.com/joaogabriellyra.png'
-        alt='post owner image'
-        width={48}
-        height={48}
+        border={false}
       />
       <div className={styles.commentBox}>
         <div className={styles.commentContent}>

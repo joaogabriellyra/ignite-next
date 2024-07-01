@@ -8,3 +8,9 @@
   gap: 2rem;
   align-items: flex-start; /* alinha pro topo. o padrão é tentar fazer com que as duas tenha a mesma altura */
 }
+
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}

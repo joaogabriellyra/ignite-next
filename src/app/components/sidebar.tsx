@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './sidebar.module.css';
 import Link from 'next/link';
+import Avatar from './avatar';
 
 export default function Sidebar() {
   return (
@@ -14,12 +15,8 @@ export default function Sidebar() {
       />
 
       <div className={styles.profile}>
-        <Image 
-          className={styles.avatar}
+        <Avatar 
           src='https://github.com/joaogabriellyra.png'
-          alt='avatar image'
-          width={48}
-          height={48}
         />
         <strong>João Gabriel Lyra</strong>
         <span>Web Developer</span>
