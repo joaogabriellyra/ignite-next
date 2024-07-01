@@ -1,20 +1,17 @@
 'use client'
 
-import Image from 'next/image';
 import styles from './post.module.css';
 import Link from 'next/link';
 import Comment from './comment';
+import Avatar from './avatar';
 
 export default function Post() {
   return(
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <Image 
+          <Avatar 
             src='https://github.com/joaogabriellyra.png'
-            alt='post owner image'
-            width={48}
-            height={48}
           />
           <div className={styles.authorInfo}>
             <strong>João Gabriel Lyra</strong>
