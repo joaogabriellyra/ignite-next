@@ -1,9 +1,10 @@
 import Header from "./components/header";
 import Post from "./components/post";
 import Sidebar from "./components/sidebar";
+import { IPost } from "./interfaces";
 import styles from "./page.module.css";
 
-const posts:any = [
+const posts: IPost[] = [
   {
     id: 1,
     author: {
@@ -53,7 +54,7 @@ export default function Home() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          {posts?.map((post:any) => (
+          {posts?.map((post: IPost) => (
             <Post key={post.id} post={post}/>
           ))}
         </main>

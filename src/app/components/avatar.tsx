@@ -1,8 +1,9 @@
 import styles from './avatar.module.css'
 import Image from 'next/image';
 import { clsx } from 'clsx';
+import { IAvatar } from '../interfaces';
 
-export default function Avatar({src, border = true }: any) {
+export default function Avatar({ border = true, src, ...props }: IAvatar) {
   return (
     <Image 
       src={src}
